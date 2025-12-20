@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter App</title>
+
+    <!-- CSS CDN -->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- FONT AWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Currency Converter</header>
+
+      <!-- FORM SECTION -->
+      <form action="#">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="text" value="1" />
+        </div>
+
+        <div class="drop-list">
+          <!-- FROM SECTION -->
+          <div class="from">
+            <p>From</p>
+            <div class="select-box">
+              <img src="https://flagsapi.com/US/flat/64.png" alt="Flag" />
+
+              <select>
+                <!-- <option value="USD">USD</option>
+                <option value="NPR">NPR</option>
+                <option value="INR">INR</option>
+                <option value="PKR">PKR</option>
+                <option value="MAD">MAD</option> -->
+              </select>
+            </div>
+          </div>
+
+          <!-- ICON -->
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+
+          <!-- TO SECTION -->
+          <div class="to">
+            <p>To</p>
+            <div class="select-box">
+              <img src="https://flagsapi.com/PK/flat/64.png" alt="Flag" />
+
+              <select>
+                <!-- <option value="USD">USD</option>
+                <option value="NPR">NPR</option>
+                <option value="INR">INR</option>
+                <option value="PKR">PKR</option>
+                <option value="MAD">MAD</option> -->
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- DISPLAY EXCHANGE -->
+        <div class="exchange-rate">Getting exchange rate...</div>
+
+        <!-- EXCHANGE BUTTON -->
+        <button>Get Exchange Rate</button>
+      </form>
+    </div>
+
+    <!-- SCRIPT TAG -->
+    <script src="./JS/country-list.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
